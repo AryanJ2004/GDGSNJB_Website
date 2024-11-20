@@ -32,6 +32,8 @@
 //   )
 // }
 
+
+
 import React from 'react';
 import ReactTypingEffect from 'react-typing-effect';
 import { useTheme } from '../context/ThemeContext'; // Assuming you have a ThemeContext for dark/light mode
@@ -41,6 +43,14 @@ import backgroundImageDark from '../assets/homepage1.svg';
 
 export default function Hero() {
   const { isDarkMode } = useTheme(); // Access the theme mode
+
+  // Function to scroll to the next section
+  const scrollToNextSection = () => {
+    const nextSection = document.getElementById('about-gdg');
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <>
@@ -107,12 +117,22 @@ export default function Hero() {
               isDarkMode
                 ? 'bg-blue-600 hover:bg-blue-700 text-white'
                 : 'bg-blue-500 hover:bg-blue-600 text-white'
-            }`} onClick={() => window.open('https://gdg.community.dev/gdg-on-campus-snjbs-late-sau-kantabai-bhavarlalji-jain-college-of-engineering-nashik-india/', '_blank')}
+            }`}
+            onClick={() =>
+              window.open(
+                'https://gdg.community.dev/gdg-on-campus-snjbs-late-sau-kantabai-bhavarlalji-jain-college-of-engineering-nashik-india/',
+                '_blank'
+              )
+            }
           >
             Join Community
           </button>
         </div>
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+
+        <div
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer"
+          onClick={scrollToNextSection}
+        >
           <svg
             className="w-6 h-6"
             fill="none"
