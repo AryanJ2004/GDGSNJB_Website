@@ -32,8 +32,6 @@
 //   )
 // }
 
-'use client';
-
 import React from 'react';
 import ReactTypingEffect from 'react-typing-effect';
 import { useTheme } from '../context/ThemeContext'; // Assuming you have a ThemeContext for dark/light mode
