@@ -10,8 +10,11 @@ import {
   FaMediumM,
 } from 'react-icons/fa';
 import logo from '../assets/logo.png';
-import smallScreenBg from '../assets/footerBgMobile.svg';
-import largeScreenBg from '../assets/footerBg.svg';
+// import smallScreenBg from '../assets/footerBgMobile.svg';
+// import largeScreenBg from '../assets/footerBg.svg';
+// import logo from '/logo.png'; // Assuming logo.png is in the public folder
+const smallScreenBg = '/footerBgMobile.svg';
+const largeScreenBg = '/footerBg.svg';
 
 export default function Footer() {
   return (
