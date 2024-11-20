@@ -6,7 +6,7 @@ import { useTheme } from '../context/ThemeContext'
 const teamMembers = [
   {
     name: "Gunjan Bhansali",
-    role: "GDSC Lead",
+    role: "GDG Lead",
     image: "/placeholder.svg?height=150&width=150",
     color: "bg-red-200",
     darkColor: "bg-red-200",
