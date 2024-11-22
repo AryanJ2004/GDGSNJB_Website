@@ -87,7 +87,7 @@ export default function Footer() {
             <p className="text-sm text-gray-400">
               &copy; 2024 GDG SNJB's Late Sau K.B. Jain College Of Engineering. All rights reserved.
             </p>
-            <p className="text-sm text-gray-400 mt-2">Made with ❤️ by <a href='https://github.com/aryanj2004' target='_blank'>Aryan</a></p>
+            {/* <p className="text-sm text-gray-400 mt-2">Made with ❤️ by <a href='https://github.com/aryanj2004' target='_blank'>Aryan</a></p> */}
           </div>
           <div className="flex flex-wrap justify-center gap-4 mt-4 md:mt-0">
             <a href="https://github.com/gdg-snjb" target='_blank' className="text-gray-400 hover:text-white">
@@ -106,8 +106,11 @@ export default function Footer() {
               <MdOutlinePeopleOutline size={24} />
             </a>
           </div>
+          
         </div>
+        <p className="text-sm text-gray-400 mt-3 text-center md:text-left ">Made with ❤️ by <a href='https://github.com/aryanj2004' target='_blank'>Aryan</a></p>
       </div>
+      
 
       {/* Responsive background image adjustment */}
       <style jsx>{`
