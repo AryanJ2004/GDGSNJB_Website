@@ -37,13 +37,16 @@ export default function WhatIsGDSC() {
               {GDSCInfo.description}
             </p>
             <div className="flex justify-center space-x-4 mb-8">
-              {socialMediaIcons.map(({ icon, key }) => (
-                <div 
-                  key={key} 
+              {socialMediaIcons.map(({ icon, key, link }) => (
+                <a 
+                  key={key}
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300"
                 >
                   {icon}
-                </div>
+                </a>
               ))}
             </div>
           </div>

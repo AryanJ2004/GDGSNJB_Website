@@ -25,10 +25,13 @@ export default function Events() {
           <MapPinIcon className="mr-2 h-4 w-4" />
           {event.location}
         </div>
-        <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg inline-flex items-center transition-all duration-300">
-          Learn More
-          <ExternalLinkIcon className="ml-2 h-4 w-4" />
-        </button>
+        <button
+  onClick={() => window.open(event.learnMoreLink, '_blank')}
+  className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg inline-flex items-center transition-all duration-300"
+>
+  Learn More
+  <ExternalLinkIcon className="ml-2 h-4 w-4" />
+</button>
       </div>
     </div>
   );

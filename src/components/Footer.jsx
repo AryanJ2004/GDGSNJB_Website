@@ -1,13 +1,10 @@
 import React from 'react';
+import { MdOutlinePeopleOutline } from 'react-icons/md';
 import {
   FaGithub,
-  FaTwitter,
   FaLinkedin,
-  FaYoutube,
   FaInstagram,
-  FaDiscord,
-  FaFacebookF,
-  FaMediumM,
+  FaWhatsapp
 } from 'react-icons/fa';
 import logo from '../assets/logo.png';
 // import smallScreenBg from '../assets/footerBgMobile.svg';
@@ -38,12 +35,12 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Contribute</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="https://github.com/GDG-SNJB/GDG_SNJB_Website/issues" target='_blank' className="text-gray-400 hover:text-white">
                   File a Bug
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="https://github.com/GDG-SNJB/GDG_SNJB_Website/" target='_blank' className="text-gray-400 hover:text-white">
                   View Source
                 </a>
               </li>
@@ -53,12 +50,12 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Programs</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="https://developers.google.com/community/experts" target='_blank' className="text-gray-400 hover:text-white">
                   Google Developer Experts
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="https://gdg.community.dev/" target='_blank' className="text-gray-400 hover:text-white">
                   Google Developer Groups
                 </a>
               </li>
@@ -68,17 +65,17 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Important Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="https://console.firebase.google.com/" target='_blank' className="text-gray-400 hover:text-white">
                   Firebase Console
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="https://cloud.google.com/" target='_blank' className="text-gray-400 hover:text-white">
                   Google Cloud Platform
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="https://console.actions.google.com/" target='_blank' className="text-gray-400 hover:text-white">
                   Action on Google
                 </a>
               </li>
@@ -90,32 +87,23 @@ export default function Footer() {
             <p className="text-sm text-gray-400">
               &copy; 2024 GDG SNJB's Late Sau K.B. Jain College Of Engineering. All rights reserved.
             </p>
-            <p className="text-sm text-gray-400 mt-2">Made with ❤️ by Aryan</p>
+            <p className="text-sm text-gray-400 mt-2">Made with ❤️ by <a href='https://github.com/aryanj2004' target='_blank'>Aryan</a></p>
           </div>
           <div className="flex flex-wrap justify-center gap-4 mt-4 md:mt-0">
-            <a href="#" className="text-gray-400 hover:text-white">
+            <a href="https://github.com/gdg-snjb" target='_blank' className="text-gray-400 hover:text-white">
               <FaGithub size={24} />
             </a>
-            <a href="#" className="text-blue-400 hover:text-white">
-              <FaTwitter size={24} />
-            </a>
-            <a href="#" className="text-blue-700 hover:text-white">
+            <a href="https://www.linkedin.com/company/gdgoncampus-snjb/" target='_blank' className="text-blue-700 hover:text-white">
               <FaLinkedin size={24} />
             </a>
-            <a href="#" className="text-red-600 hover:text-white">
-              <FaYoutube size={24} />
-            </a>
-            <a href="#" className="text-pink-600 hover:text-white">
+            <a href="https://www.instagram.com/gdgc_snjb/" target='_blank' className="text-pink-600 hover:text-white">
               <FaInstagram size={24} />
             </a>
-            <a href="#" className="text-indigo-500 hover:text-white">
-              <FaDiscord size={24} />
+            <a href="https://chat.whatsapp.com/ETqtRXTWqNm1p4qzjwnnQR" target='_blank' className="text-green-600 hover:text-white">
+              <FaWhatsapp size={24} />
             </a>
-            <a href="#" className="text-blue-600 hover:text-white">
-              <FaFacebookF size={24} />
-            </a>
-            <a href="#" className="text-gray-400 hover:text-white">
-              <FaMediumM size={24} />
+            <a href="https://gdg.community.dev/gdg-on-campus-snjbs-late-sau-kantabai-bhavarlalji-jain-college-of-engineering-nashik-india/" target='_blank' className="text-pink-600 hover:text-white">
+              <MdOutlinePeopleOutline size={24} />
             </a>
           </div>
         </div>

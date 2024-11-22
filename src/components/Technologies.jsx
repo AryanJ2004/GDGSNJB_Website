@@ -1,11 +1,14 @@
 import React from 'react';
 import webdev from "../assets/webDev.gif";
 import { useTheme } from '../context/ThemeContext';
+import cc from "../assets/cc.gif";
+import aiml from "../assets/aiml.gif";
+import os from "../assets/os.svg";
 
 const technologies = [
   {
     name: "Web Development",
-    description: "Learn the core foundations of a delightful web experience both for the user and developer. Stay up to tabs with emerging and trending technologies. Get access to a guided, tutorial and hands-on coding experience.",
+    description: "Master the essential skills for creating dynamic and user-friendly web applications. Learn the core foundations of web development, from front-end design to back-end architecture, ensuring a seamless experience for both users and developers. Stay up to date with the latest trends and technologies in the field, including HTML, CSS, JavaScript, and frameworks like React and Node.js. Gain hands-on experience through guided tutorials and coding exercises, building real-world projects that improve both your technical skills and your ability to create responsive, interactive websites.",
     image: webdev,
     color: "bg-yellow-100",
     darkColor: "bg-yellow-900/30",
@@ -14,26 +17,26 @@ const technologies = [
   },
   {
     name: "Cloud Computing",
-    description: "Understand the core concepts of cloud services and how to leverage them in your applications.",
-    image: webdev,
+    description: "Explore the transformative power of Cloud Computing, where resources like servers, storage, databases, networking, and software are delivered over the internet. Learn how to harness the scalability, flexibility, and cost-effectiveness of the cloud for building robust, reliable, and high-performance AI/ML models. Gain practical experience through tutorials and hands-on projects, mastering cloud-based solutions for deploying, scaling, and managing machine learning models seamlessly across the cloud.",
+    image: cc,
     color: "bg-blue-100",
     darkColor: "bg-blue-900/30",
     buttonColor: "bg-purple-500 hover:bg-purple-600",
     darkButtonColor: "bg-purple-600 hover:bg-purple-700",
   },
   {
-    name: "Cloud Computing (To be Updated)",
-    description: "Understand the core concepts of cloud services and how to leverage them in your applications.",
-    image: webdev,
+    name: "AI & Machine Learning",
+    description: "Dive into the world of Artificial Intelligence (AI) and Machine Learning (ML) to understand the core principles behind intelligent systems. Explore key concepts like data processing, algorithms, and model training to create predictive models and smart applications. Stay updated with the latest trends in AI and ML, including deep learning, natural language processing, computer vision, and reinforcement learning. Access hands-on tutorials, coding exercises, and real-world projects to sharpen your skills and apply AI/ML techniques to solve complex problems and drive innovation.",
+    image: aiml,
     color: "bg-green-100",
     darkColor: "bg-green-900/30",
     buttonColor: "bg-purple-500 hover:bg-purple-600",
     darkButtonColor: "bg-purple-600 hover:bg-purple-700",
   },
   {
-    name: "Cloud Computing (To be Updated)",
-    description: "Understand the core concepts of cloud services and how to leverage them in your applications.",
-    image: webdev,
+    name: "Open Source",
+    description: "Embrace the power of Open Source technologies, where collaboration, transparency, and community-driven development take center stage. Learn how to contribute to and utilize open-source projects across various domains. Stay informed about popular open-source tools, frameworks, and libraries, and gain hands-on experience by contributing to real-world projects. Whether you're enhancing existing codebases or building new solutions, open-source involvement fosters creativity, innovation, and global collaboration.",
+    image: os,
     color: "bg-red-100",
     darkColor: "bg-red-900/30",
     buttonColor: "bg-purple-500 hover:bg-purple-600",
