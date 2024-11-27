@@ -108,8 +108,17 @@ export default function Footer() {
           </div>
           
         </div>
-        <p className="text-sm text-gray-400 mt-3 text-center md:text-left ">Made with ❤️ by <a href='https://github.com/aryanj2004' target='_blank'>Aryan</a></p>
-      </div>
+        <p className="text-sm text-gray-400 mt-4 text-center md:text-left flex items-center justify-center md:justify-start gap-2">
+      Made with ❤️ by Aryan -
+      <a 
+        href='https://github.com/aryanj2004' 
+        target='_blank'
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-1 text-gray-400 hover:text-white"
+      >
+        <FaGithub size={19} />
+      </a>
+    </p>      </div>
       
 
       {/* Responsive background image adjustment */}
